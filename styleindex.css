@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-body{
+body {
 	margin: 0px;
 }
 
-header{
+header {
 	background: black;
 	color: white;
 	padding: 8px 20px 6px 40px;
 	height: 50px;
 }
 
-header h1{
+header h1 {
 	display: inline;
 	font-family: 'Lobster', cursive;
 	font-weight: 400;
@@ -28,28 +28,28 @@ nav ul {
 	float: right;
 }
 
-nav ul li{
+nav ul li {
 	display: inline-block;
 	list-style-type: none;
 	color: white;
 	float: left;
 	margin-left: 12px;
-	
+
 
 }
 
-nav ul li a{
+nav ul li a {
 	color: white;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 
-nav ul ul{
+nav ul ul {
 	display: none;
 	position: absolute;
 }
 
-#navli ul li ul:hovar{
+#navli ul li ul:hovar {
 	visibility: visible;
 	display: block;
 }
@@ -58,31 +58,30 @@ nav ul ul{
 
 
 
-#navli{
+#navli {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.homered{
+.homered {
 	background-color: red;
 	padding: 30px 10px 22px 10px;
 }
 
-.divider{
+.divider {
 	background-color: red;
 	height: 5px;
 }
 
-.homeblack:hover{
+.homeblack:hover {
 	background-color: blue;
 	padding: 30px 10px 21px 10px;
 
 }
 
-#divimg{
-	
+#divimg {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: : url('../images/back.jpg');
+	background-image: url('../images/back.jpg');
 	padding: 0px;
 	margin: 10px;
 	height: 100%;
@@ -90,7 +89,7 @@ nav ul ul{
 }
 
 
-#registration{
+#registration {
 	padding: 2px 2px 2px 2px;
 	text-align: center;
 	background-color: #F0FFFF;
@@ -99,7 +98,7 @@ nav ul ul{
 	background-position: center;
 }
 
-#textField{
+#textField {
 	width: 350px;
 	height: 50px;
 	padding: 5px;
@@ -108,11 +107,11 @@ nav ul ul{
 }
 
 
-#gender{
+#gender {
 	font-family: 'Montserrat', sans-serif;
 }
 
-#sub{
+#sub {
 	width: 350px;
 	height: 50px;
 	padding: 5px;
@@ -121,7 +120,7 @@ nav ul ul{
 	background-color: #0c6996;
 }
 
-.table-emp{
+.table-emp {
 	padding: 5px;
 	height: auto;
 	width: 100%;
@@ -131,31 +130,31 @@ nav ul ul{
 }
 
 .table-emp tr th {
-  background-color: #4CAF50;
-  color: white;
+	background-color: #4CAF50;
+	color: white;
 }
 
 
 
-.simple-form1{
-	margin-left: 10px; 
+.simple-form1 {
+	margin-left: 10px;
 	padding: 2px 2px 2px 2px;
 	text-align: center;
 	background-color: #F0FFFF;
 	height: auto;
 	width: auto;
 	background-position: center;
-	
+
 }
 
 
 
-.leavetable{
+.leavetable {
 	width: 100%;
 	height: auto;
 }
 
-#textField{
+#textField {
 	width: 350px;
 	height: 50px;
 	padding: 5px;
@@ -165,14 +164,38 @@ nav ul ul{
 
 
 
-.info{
+.info {
 	margin-left: 10px;
 	padding: 100px;
 }
 
 
 
-.h2{
+.h2 {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.homeImg {
+	float: left;
+	margin-right: 100px;
+	margin-top: 35px;
+	margin-left: 70px;
+}
+
+.homeTxt {
+	margin-top: 175px;
+}
+
+.homeTxt h1 {
+	font-family: 'Lobster', cursive;
+	font-weight: 200;
+	font-size: 50px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.homeTxt p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}

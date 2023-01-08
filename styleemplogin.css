@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-body{
+body {
 	margin: 0px;
 }
 
-header{
+header {
 	background: black;
 	color: white;
 	padding: 8px 20px 6px 40px;
 	height: 50px;
 }
 
-header h1{
+header h1 {
 	display: inline;
 	font-family: 'Lobster', cursive;
 	font-weight: 400;
@@ -28,28 +28,28 @@ nav ul {
 	float: right;
 }
 
-nav ul li{
+nav ul li {
 	display: inline-block;
 	list-style-type: none;
 	color: white;
 	float: left;
 	margin-left: 12px;
-	
+
 
 }
 
-nav ul li a{
+nav ul li a {
 	color: white;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 
-nav ul ul{
+nav ul ul {
 	display: none;
 	position: absolute;
 }
 
-#navli ul li ul:hovar{
+#navli ul li ul:hovar {
 	visibility: visible;
 	display: block;
 }
@@ -58,80 +58,96 @@ nav ul ul{
 
 
 
-#navli{
+#navli {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.homered{
+.homered {
 	background-color: red;
 	padding: 30px 10px 22px 10px;
 }
 
-.divider{
+.divider {
 	background-color: red;
 	height: 5px;
 }
 
-.homeblack:hover{
+.homeblack:hover {
 	background-color: blue;
 	padding: 30px 10px 21px 10px;
 
 }
 
 table {
-margin: 0px;
-  border-collapse: collapse;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+	border-collapse: collapse;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
 }
 
-th, td {
-  text-align: center;
-  padding: 8px;
+th,
+td {
+	text-align: center;
+	padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
-tr:hover {background-color:#76D7C4;}
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+
+tr:hover {
+	background-color: #76D7C4;
+}
 
 th {
-  background-color: #4CAF50;
-  color: white;
+	background-color: #4CAF50;
+	color: white;
 }
 
 .p-t-20 {
-  padding-top: 20px;
+	padding-top: 20px;
 }
 
 .btn {
-  line-height: 40px;
-  display: inline-block;
-  padding: 0 25px;
-  cursor: pointer;
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-  color: #fff;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  font-size: 14px;
-  font-weight: 700;
+	line-height: 40px;
+	display: inline-block;
+	padding: 0 25px;
+	cursor: pointer;
+	font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+	color: #fff;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-size: 14px;
+	font-weight: 700;
 }
 
 .btn--radius {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 .btn--green {
-  background: #57b846;
+	background: #57b846;
 }
 
+.fr {
+	float: right;
+}
 
+.mr-60 {
+	margin-right: 60px;
+}
 
+.btn--green a {
+	color: #fff;
+	text-decoration: none;
+}
 
-
-
-
-
-
+#divimg h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	text-align: center;
+}

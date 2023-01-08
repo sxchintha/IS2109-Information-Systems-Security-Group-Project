@@ -2,7 +2,11 @@
 <html>
 
 <head>
-   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="
+		default-src 'self' https://fonts.googleapis.com; 
+		font-src 'self' https://fonts.gstatic.com;">
 
     <!-- Title Page-->
     <title>Assign Project | Admin Panel</title>
@@ -31,17 +35,14 @@
                 <li><a class="homeblack" href="viewemp.php">View Employee</a></li>
                 <li><a class="homered" href="assign.php">Assign Project</a></li>
                 <li><a class="homeblack" href="assignproject.php">Project Status</a></li>
-                <li><a class="homeblack" href="salaryemp.php">Salary Table</a></li> 
+                <li><a class="homeblack" href="salaryemp.php">Salary Table</a></li>
                 <li><a class="homeblack" href="empleave.php">Employee Leave</a></li>
-                <li><a class="homeblack" href="alogin.html">Log Out</a></li>
+                <li><a class="homeblack" href="alogin.php">Log Out</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <div class="divider"></div>
-
-
-
 
     <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
         <div class="wrapper wrapper--w680">
@@ -49,18 +50,18 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Assign Project</h2>
+
+                    <?php
+                    session_start();
+                    $token = bin2hex(random_bytes(32));
+                    $_SESSION['csrf_token'] = $token;
+                    ?>
+
                     <form action="process/assignp.php" method="POST" enctype="multipart/form-data">
 
-
-                        
-
-                         <div class="input-group">
+                        <div class="input-group">
                             <input class="input--style-1" type="text" placeholder="Employee ID" name="eid" required="required">
                         </div>
-
-
-
-
 
                         <div class="input-group">
                             <input class="input--style-1" type="text" placeholder="Project Name" name="pname" required="required">
@@ -69,15 +70,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <input class="input--style-1" type="date" placeholder="date" name="duedate" required="required">
-                                   
+
                                 </div>
                             </div>
-                            
+
                         </div>
-                        
-                        
 
-
+                        <input type="hidden" name="csrf_token" value="<?php echo $token; ?>">
 
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit">Assign</button>
