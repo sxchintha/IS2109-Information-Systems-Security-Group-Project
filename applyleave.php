@@ -45,6 +45,13 @@ $empName = ($employee['firstName']);
 				<div class="card-heading"></div>
 				<div class="card-body">
 					<h2 class="title">Apply Leave Form</h2>
+
+					<?php
+					session_start();
+					$token = bin2hex(random_bytes(32));
+					$_SESSION['csrf_token'] = $token;
+					?>
+
 					<form action="process/applyleaveprocess.php" method="POST">
 
 
@@ -56,22 +63,17 @@ $empName = ($employee['firstName']);
 								<p>Start Date</p>
 								<div class="input-group">
 									<input class="input--style-1" type="date" placeholder="start" name="start">
-
 								</div>
 							</div>
 							<div class="col-2">
 								<p>End Date</p>
 								<div class="input-group">
 									<input class="input--style-1" type="date" placeholder="end" name="end">
-
 								</div>
 							</div>
 						</div>
-
-
-
-
 						<div class="p-t-20">
+							<input type="hidden" name="csrf_token" value="<?php echo $token; ?>">
 							<button class="btn btn--radius btn--green" type="submit">Submit</button>
 						</div>
 					</form>
